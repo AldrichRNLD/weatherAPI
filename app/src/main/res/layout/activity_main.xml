@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Region"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Country"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_wind_kph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind kph : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_pressure_mb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pressure mb : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_precip_mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precip mm : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cloud : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_gust_kph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gust kph : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_condition_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Condition : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_temp_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_air_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Quality : "
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_last_updated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Last Updated on "
+            android:textSize="15dp" />
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Show 3 days Forecast"/>
+</RelativeLayout>

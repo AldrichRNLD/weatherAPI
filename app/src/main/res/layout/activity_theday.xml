@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Region"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Country"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/id_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Date : "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/linear"
+        android:layout_above="@id/button_forecast" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"/>
+</RelativeLayout>
